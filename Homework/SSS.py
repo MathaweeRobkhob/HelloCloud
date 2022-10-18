@@ -81,7 +81,7 @@ user3 = Students(
 )
 
 regis1 = Registration(
-    student_id ='6406022620070',
+    student_id ='6406022620061',
     subject_id='060233113',
     year='2565',
     semester ='1',
@@ -89,11 +89,11 @@ regis1 = Registration(
 )
 
 regis11 = Registration(
-    student_id ='6406022620070',
+    student_id ='6406022620061',
     subject_id='060233201',
     year='2565',
     semester ='1',
-    grade = 'C+'
+    grade = 'B+'
 )
 
 regis2 = Registration(
@@ -101,7 +101,7 @@ regis2 = Registration(
     subject_id='060233113',
     year='2565',
     semester ='1',
-    grade = 'A'
+    grade = 'C'
 )
 
 regis22 = Registration(
@@ -113,19 +113,19 @@ regis22 = Registration(
 )
 
 regis3 = Registration(
-    student_id ='6406022620061',
+    student_id ='6406022620070',
     subject_id='060233113',
     year='2565',
     semester ='1',
-    grade = 'B'
+    grade = 'B+'
 )
 
 regis33 = Registration(
-    student_id ='6406022620061',
+    student_id ='6406022620070',
     subject_id='060233201',
     year='2565',
     semester ='1',
-    grade = 'C'
+    grade = 'A'
 )
 sub1 = Subjects(subject_id ='060233113',subject_name='ADVANCED COMPUTER PROGRAMMIN',credit='3',teacher_id ='AMK')
 sub2 = Subjects(subject_id ='060233201',subject_name='NETWORK ENGINEERING LABORATO',credit='1',teacher_id ='WKN')
