@@ -2,11 +2,11 @@ import sqlite3
 from flask import Flask,render_template
 from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name__)
+app = Flask(_name_)
 
 @app.route("/")
 def index():
-    c = sqlite3.connect('Work.sqlite3')
+    c = sqlite3.connect('HW1.sqlite3')
     cur = c.cursor()
     # cur.execute("SELECT Students.student_id , Students.f_name ,Students.l_name , Subjects.sub_id FROM Students, Subjects")
     cur.execute("SELECT Students.student_id , Students.f_name ,Students.l_name\
@@ -23,5 +23,5 @@ def index():
     return render_template("index.html", test=test)
 
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     app.run(host='0.0.0.0', port=80, debug=True)
