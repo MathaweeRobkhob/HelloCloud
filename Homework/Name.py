@@ -4,7 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, CHAR, VARCHAR, Integer, String, Text, DateTime, Float, Boolean, PickleType
 
 Base = declarative_base()
-db_uri = 'sqlite:///work.sqlite3'
+db_uri = 'sqlite:///Work.sqlite3'
 engine = create_engine(db_uri, echo=False)
 
 class Students(Base):
@@ -81,7 +81,7 @@ user3 = Students(
 )
 
 regis1 = Registration(
-    student_id ='6406022620061',
+    student_id ='6406022620070',
     subject_id='060233113',
     year='2565',
     semester ='1',
@@ -89,11 +89,11 @@ regis1 = Registration(
 )
 
 regis11 = Registration(
-    student_id ='6406022620061',
+    student_id ='6406022620070',
     subject_id='060233201',
     year='2565',
     semester ='1',
-    grade = 'B+'
+    grade = 'C+'
 )
 
 regis2 = Registration(
@@ -101,7 +101,7 @@ regis2 = Registration(
     subject_id='060233113',
     year='2565',
     semester ='1',
-    grade = 'C'
+    grade = 'A'
 )
 
 regis22 = Registration(
@@ -113,19 +113,19 @@ regis22 = Registration(
 )
 
 regis3 = Registration(
-    student_id ='6406022620070',
+    student_id ='6406022620061',
     subject_id='060233113',
     year='2565',
     semester ='1',
-    grade = 'B+'
+    grade = 'B'
 )
 
 regis33 = Registration(
-    student_id ='6406022620070',
+    student_id ='6406022620061',
     subject_id='060233201',
     year='2565',
     semester ='1',
-    grade = 'A'
+    grade = 'C'
 )
 sub1 = Subjects(subject_id ='060233113',subject_name='ADVANCED COMPUTER PROGRAMMIN',credit='3',teacher_id ='AMK')
 sub2 = Subjects(subject_id ='060233201',subject_name='NETWORK ENGINEERING LABORATO',credit='1',teacher_id ='WKN')
@@ -135,3 +135,4 @@ Tea2 = Teacher(teacher_id='WKN',f_name='Watcharachai',l_name='Kongsiriwattana',e
 
 session.add_all([user1,user2,user3,regis1, regis11, regis2, regis22, regis3, regis33,sub1 ,sub2,Tea1,Tea2])
 session.commit()
+print(user1,user2,user3,regis1, regis11, regis2, regis22, regis3, regis33,sub1 ,sub2,Tea1,Tea2)
