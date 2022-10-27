@@ -60,10 +60,10 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 user1 = Students(
-    student_id ='6406022620070',
-    f_name='Rawiporn',
-    l_name='Suamsiri',
-    e_mail ='6406022620070@kmutnb.ac.th'
+    student_id ='6406022620061',
+    f_name='Mathawee',
+    l_name='Robkhob',
+    e_mail ='6406022620061@kmutnb.ac.th'
 )
 
 user2 = Students(
@@ -74,14 +74,14 @@ user2 = Students(
 )
 
 user3 = Students(
-    student_id ='6406022620061',
-    f_name='Mathawee',
-    l_name='Robkhob',
-    e_mail ='6406022620061@kmutnb.ac.th'
+    student_id ='6406022620070',
+    f_name='Rawiporn',
+    l_name='Suamsiri',
+    e_mail ='6406022620070@kmutnb.ac.th'
 )
 
 regis1 = Registration(
-    student_id ='6406022620070',
+    student_id ='6406022620061',
     subject_id='060233113',
     year='2565',
     semester ='1',
@@ -89,11 +89,11 @@ regis1 = Registration(
 )
 
 regis11 = Registration(
-    student_id ='6406022620070',
+    student_id ='6406022620061',
     subject_id='060233201',
     year='2565',
     semester ='1',
-    grade = 'C+'
+    grade = 'B'
 )
 
 regis2 = Registration(
@@ -113,7 +113,7 @@ regis22 = Registration(
 )
 
 regis3 = Registration(
-    student_id ='6406022620061',
+    student_id ='6406022620070',
     subject_id='060233113',
     year='2565',
     semester ='1',
@@ -121,11 +121,11 @@ regis3 = Registration(
 )
 
 regis33 = Registration(
-    student_id ='6406022620061',
+    student_id ='6406022620070',
     subject_id='060233201',
     year='2565',
     semester ='1',
-    grade = 'C'
+    grade = 'A'
 )
 sub1 = Subjects(subject_id ='060233113',subject_name='ADVANCED COMPUTER PROGRAMMIN',credit='3',teacher_id ='AMK')
 sub2 = Subjects(subject_id ='060233201',subject_name='NETWORK ENGINEERING LABORATO',credit='1',teacher_id ='WKN')
