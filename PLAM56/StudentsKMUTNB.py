@@ -1,4 +1,5 @@
 from sqlalchemy import create_engine
+import sqlalchemy
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, CHAR, VARCHAR, Integer, String, Text, DateTime, Float, Boolean, PickleType
